@@ -3,7 +3,7 @@
 This domain has of a number of subdomains:
 
 * admin.bronsenproject.nl
-* wwww.bronsenproject.nl
+* www.bronsenproject.nl
 * boekhouding.bronsenproject.nl
 * webmail.bronsenproject.nl
 
@@ -14,7 +14,7 @@ There are several services available on haakma.org.
 * Apache2 - you can locate the apache configuration in:
   * bronsenproject.nl-site/apache2
     * admin-bronsenproject-nl.conf
-    * wwww-bronsenproject-nl.conf
+    * www-bronsenproject-nl.conf
   * bronsenproject.nl-webmail/apache2
     * webmail-bronsenproject-nl.conf
   * bronsenproject.nl-boekhouding/apache2
@@ -24,7 +24,7 @@ There are several services available on haakma.org.
 * Postfix
   * This is in the daily backup cycle
 * MySQL
-  * Configuration is found in haakma.org-mysql. In the docker-compose file the MySQL-server is setup. 
+  * Configuration is found in bronsenproject.nl-mysql. In the docker-compose file the MySQL-server is setup. 
 
 ## Backup
 
@@ -39,4 +39,4 @@ The backups are located on the host:
 
 ## Slack
 
-You can signup to the slack account [haakma.slack.com](https://haakma.slack.com/messages/C78LBN27M) and receive notification messages of backups and other administrative processes.
+You can signup to the slack account [haakma.slack.com](https://haakma.slack.com/messages/C79KZ0LSJ) and receive notification messages of backups and other administrative processes.
