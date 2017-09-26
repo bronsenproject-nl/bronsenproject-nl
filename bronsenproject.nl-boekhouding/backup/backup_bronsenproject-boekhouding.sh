@@ -16,6 +16,10 @@ echo "***************************************************************"
 
 echo "[INFO] Backup MySQL schema : ${SQL_SCHEMA}"
 mysqldump -u ${SQL_USER} -p${SQL_PASSWORD} ${SQL_SCHEMA} --host=${SQL_HOST} --port=${SQL_PORT} > ${BASE_DIR}/${DATE}_bronsenproject_finance.sql
+if [[ ${?} != 0 ]]; then
+  echo "[ERROR] mysqldump failed"
+  exit 1
+fi
 
 echo "[INFO] Backup data directory : ${WWW_DIR}/boekhouding.bronsenproject.nl/"
 tar -cvf ${BASE_DIR}/${DATE}_haakma_verbouw.tar ${WWW_DIR}/boekhouding.bronsenproject.nl/
