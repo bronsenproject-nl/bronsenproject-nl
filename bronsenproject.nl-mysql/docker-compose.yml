@@ -1,0 +1,22 @@
+version : '3'
+
+services:
+  mysql-bronsenproject-org:
+   restart: always
+   image: mysql:5.7.18
+   ports:
+    - 13306:3306
+   volumes:
+    - data-bronsenproject-nl:/var/lib/mysql
+    - /home/sido/mysql/dumps:/docker-entrypoint-initdb.d
+   networks:
+    - bronsenproject-network
+   environment:
+    - MYSQL_RANDOM_ROOT_PASSWORD=yes
+
+volumes:
+  data-bronsenproject-org:
+
+networks:
+  bronsenproject-network:
+    driver: bridge

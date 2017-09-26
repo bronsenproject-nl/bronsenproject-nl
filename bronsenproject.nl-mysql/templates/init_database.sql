@@ -1,0 +1,7 @@
+CREATE USER #user#;
+
+CREATE DATABASE #db1#;
+CREATE DATABASE #db2#;
+
+GRANT ALL PRIVILEGES ON #db1#.* TO '#user#'@'%' IDENTIFIED BY '#password#';
+GRANT ALL PRIVILEGES ON #db2#.* TO '#user#'@'%' IDENTIFIED BY 'password';
