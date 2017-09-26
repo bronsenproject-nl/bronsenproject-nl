@@ -23,7 +23,7 @@ pipeline {
     stage('Backup boekhouding.bronsenproject.nl') {
       steps {
         echo "Backup boekhouding.bronsenproject.nl"
-        sh "./bronsenproject.nl-verbouw/backup/backup_bronsenproject-boekhouding.sh"
+        sh "./bronsenproject.nl-boekhouding/backup/backup_bronsenproject-boekhouding.sh"
       }
     }
     stage('Backup webmail.bronsenproject.nl') {
