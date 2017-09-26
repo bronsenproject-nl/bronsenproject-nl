@@ -5,7 +5,7 @@ function read_config() {
     SQL_USER=
     SQL_PASSWORD=
     SQL_SCHEMA=
-    SQL_HOST=mysql-haakma-org
+    SQL_HOST=mysql-bronsenproject-nl
     SQL_PORT=3306
 
     PROPERTY_FILE=${1}
