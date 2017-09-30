@@ -14,7 +14,7 @@ POSTFIX_CONFIG_DIR=/home/config/postfix/
 DOVECOT_CONFIG_DIR=/home/config/dovecot/
 
 echo "***************************************************************"
-echo "* Commence backup webmail.bronsenporject.nl                   *"
+echo "* Commence backup webmail.bronsenproject.nl                   *"
 echo "***************************************************************"
 
 echo "[INFO] Backup MySQL schema : ${SQL_SCHEMA}"
