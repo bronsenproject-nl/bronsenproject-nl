@@ -22,6 +22,6 @@ if [[ ${?} != 0 ]]; then
 fi
 
 echo "[INFO] Backup data directory : ${WWW_DIR}/wwww.bronsenproject.nl/"
-tar -cvf ${BASE_DIR}/${DATE}_haakma.tar ${WWW_DIR}/www.bronsenproject.nl/
+tar -cvf ${BASE_DIR}/${DATE}_bronsenproject.tar ${WWW_DIR}/www.bronsenproject.nl/
 
 echo "***************************************************************"

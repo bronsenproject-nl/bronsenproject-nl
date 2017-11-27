@@ -34,8 +34,10 @@ pipeline {
     }
     stage('Cleanup old backups') {
       steps {
-        echo "Cleanup old backups"
+        echo "Archive old backups"
         sh "./utils/move_old_backups.sh"
+        echo "Remove archived backups"
+        sh "./utils/remove_archived_backups.sh"
       }
     }
   }
